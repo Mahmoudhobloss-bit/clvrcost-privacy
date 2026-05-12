@@ -1,100 +1,282 @@
----
-layout: default
-title: Privacy Policy – CLVRCOST
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – CLVRCOST</title>
+  <meta name="description" content="Privacy Policy for CLVRCOST, a restaurant purchasing and food cost management app.">
+  <style>
+    :root {
+      --text: #1d1d1f;
+      --secondary: #515154;
+      --muted: #86868b;
+      --accent: #0071e3;
+      --rule: #d2d2d7;
+      --bg: #ffffff;
+      --code-bg: #f5f5f7;
+    }
 
-# Privacy Policy
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f5f5f7;
+        --secondary: #c7c7cc;
+        --muted: #8e8e93;
+        --accent: #2997ff;
+        --rule: #38383a;
+        --bg: #000000;
+        --code-bg: #1c1c1e;
+      }
+    }
 
-Effective date: May 6, 2026 · Last updated: May 12, 2026
+    * {
+      box-sizing: border-box;
+    }
 
-CLVRCOST ("we", "our", or "us") is a restaurant purchasing and food cost management application developed by Mahmoud Hobloss. This Privacy Policy explains what information we collect, how we use it, and your rights in relation to it.
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-text-size-adjust: 100%;
+    }
 
-By using CLVRCOST, you agree to the collection and use of information as described in this policy.
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
 
----
+    .brand {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
 
-## 1. Information We Collect
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro", "Segoe UI", Roboto, sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin: 0 0 12px;
+      color: var(--text);
+    }
 
-We collect only what is necessary to provide the app's functionality:
+    h2 {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro", "Segoe UI", Roboto, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin: 48px 0 16px;
+      color: var(--text);
+    }
 
-- **Account information:** Your name and email address, collected when you sign in using Apple Sign In or Google Sign In.
-- **User ID:** A unique identifier assigned to your account to manage your data securely in our cloud backend.
-- **App usage data:** Information about how you interact with the app (such as features used and screens visited) to help us improve the product.
-- **Crash and diagnostic data:** Technical information about app errors and crashes to help us identify and fix issues.
-- **Business data you enter:** Supplier information, purchase orders, ingredients, recipes, and menu items that you create within the app. This is your operational data — it belongs to you.
-- **Subscription and purchase information:** When you start a free trial or purchase a subscription, we receive a transaction identifier and entitlement status from Apple. We do *not* receive or store your payment card details, billing address, or Apple ID password — Apple processes all payments directly. We may also receive your App Store storefront country for tax and compliance purposes.
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 32px;
+    }
 
-## 2. How We Use Your Information
+    p {
+      margin: 0 0 16px;
+      color: var(--text);
+    }
 
-We use the information we collect solely to operate and improve CLVRCOST:
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-- To authenticate your identity and maintain your account
-- To sync your data across your devices via our cloud backend
-- To verify your subscription status and grant access to paid features
-- To ensure the security and integrity of your data
-- To diagnose technical issues and improve app performance
-- To communicate with you about your account if necessary
+    a:hover {
+      text-decoration: underline;
+    }
 
-We do not use your data for advertising, we do not sell your data, and we do not share your data with third parties for marketing purposes.
+    ul {
+      margin: 0 0 16px;
+      padding-left: 22px;
+    }
 
-## 3. Subscriptions and Payments
+    li {
+      margin-bottom: 10px;
+      color: var(--text);
+    }
 
-CLVRCOST offers an auto-renewing subscription that unlocks all features of the app. Subscriptions are managed entirely by Apple through the App Store and Apple's In-App Purchase system.
+    li strong {
+      color: var(--text);
+    }
 
-- **Payment processing:** All payments are processed by Apple. CLVRCOST does not see, collect, or store any payment card information.
-- **Subscription status:** We receive a secure receipt from Apple's StoreKit framework that tells us whether your subscription is active, in a free trial, or expired. We use this to unlock or restrict access to the app's features.
-- **Free trial:** A 14-day free trial is offered to eligible new subscribers. Eligibility is determined by Apple, not by us. You will not be charged during the free trial period.
-- **Cancellation and refunds:** You can cancel your subscription at any time from your Apple ID settings under *Settings → [Your Name] → Subscriptions* on your device. Refund requests are handled by Apple in accordance with Apple's refund policies.
-- **Annual commitment plan:** If you choose the annual-paid-monthly plan, you commit to twelve monthly payments. Cancellation stops automatic renewal at the end of the commitment period but does not refund payments already made. This is enforced by Apple, not by CLVRCOST.
+    em {
+      font-style: italic;
+      color: var(--secondary);
+    }
 
-Apple's privacy practices governing in-app purchases are described at [apple.com/legal/privacy](https://www.apple.com/legal/privacy).
+    hr {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 40px 0;
+    }
 
-## 4. Third-Party Services
+    .intro {
+      font-size: 19px;
+      line-height: 1.5;
+      color: var(--secondary);
+      margin-bottom: 24px;
+    }
 
-CLVRCOST uses the following third-party services to deliver its functionality:
+    .contact {
+      background: var(--code-bg);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
 
-- **Supabase** — our cloud database and authentication provider. Your account data and business data are stored on Supabase servers. Supabase acts as a data processor on our behalf. Learn more at [supabase.com/privacy](https://supabase.com/privacy).
-- **Apple Sign In** — used to authenticate users via their Apple ID. Governed by Apple's Privacy Policy at [apple.com/legal/privacy](https://www.apple.com/legal/privacy).
-- **Google Sign In** — used to authenticate users via their Google account. Governed by Google's Privacy Policy at [policies.google.com/privacy](https://policies.google.com/privacy).
-- **Apple In-App Purchase** — used to process subscription payments and verify entitlements. Governed by Apple's Privacy Policy linked above.
+    .contact-name {
+      font-weight: 600;
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
 
-We do not integrate any advertising networks, analytics platforms, or data brokers.
+    .contact-role {
+      color: var(--secondary);
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
 
-## 5. Data Storage and Security
+    .contact-email {
+      font-size: 15px;
+    }
 
-Your data is stored locally on your device using Apple's SwiftData framework, and optionally synced to Supabase cloud servers when you are connected to the internet. We use industry-standard security practices including encrypted connections (TLS) and row-level security policies on our database to protect your data from unauthorized access.
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
 
-## 6. Data Retention
+    @media (max-width: 600px) {
+      .container {
+        padding: 32px 20px 64px;
+      }
 
-We retain your account and business data for as long as your account is active. If your subscription expires, your data is preserved so that you can resume access by re-subscribing. If you delete your account, your data is permanently removed from our systems within 30 days. Diagnostic and crash data is retained for up to 90 days. Subscription transaction records are retained as required by Apple and applicable tax law.
+      h1 {
+        font-size: 32px;
+      }
 
-## 7. Your Rights
+      h2 {
+        font-size: 20px;
+        margin: 36px 0 12px;
+      }
 
-You have the following rights with respect to your personal data:
+      .intro {
+        font-size: 17px;
+      }
 
-- **Access:** You can view all data you have entered in the app at any time.
-- **Correction:** You can edit or update your information within the app.
-- **Deletion:** You can permanently delete your account and all associated data directly from within the app under Settings → Delete Account. This removes your data from both your device and our cloud servers.
-- **Export:** You may request a copy of your data by contacting us at the email below.
+      body {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="brand">CLVRCOST</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: May 6, 2026 · Last updated: May 12, 2026</p>
 
-If you are located in the European Economic Area (EEA) or United Arab Emirates, you may have additional rights under applicable data protection laws including GDPR or UAE Federal Decree-Law No. 45 of 2021 on Personal Data Protection.
+    <p class="intro">CLVRCOST ("we", "our", or "us") is a restaurant purchasing and food cost management application developed by Mahmoud Hobloss. This Privacy Policy explains what information we collect, how we use it, and your rights in relation to it.</p>
 
-## 8. Children's Privacy
+    <p>By using CLVRCOST, you agree to the collection and use of information as described in this policy.</p>
 
-CLVRCOST is a professional business tool intended for adults. We do not knowingly collect personal information from anyone under the age of 18. If you believe a minor has provided us with personal data, please contact us and we will delete it promptly.
+    <hr>
 
-## 9. Changes to This Policy
+    <h2>1. Information We Collect</h2>
+    <p>We collect only what is necessary to provide the app's functionality:</p>
+    <ul>
+      <li><strong>Account information:</strong> Your name and email address, collected when you sign in using Apple Sign In or Google Sign In.</li>
+      <li><strong>User ID:</strong> A unique identifier assigned to your account to manage your data securely in our cloud backend.</li>
+      <li><strong>App usage data:</strong> Information about how you interact with the app (such as features used and screens visited) to help us improve the product.</li>
+      <li><strong>Crash and diagnostic data:</strong> Technical information about app errors and crashes to help us identify and fix issues.</li>
+      <li><strong>Business data you enter:</strong> Supplier information, purchase orders, ingredients, recipes, and menu items that you create within the app. This is your operational data — it belongs to you.</li>
+      <li><strong>Subscription and purchase information:</strong> When you start a free trial or purchase a subscription, we receive a transaction identifier and entitlement status from Apple. We do <em>not</em> receive or store your payment card details, billing address, or Apple ID password — Apple processes all payments directly. We may also receive your App Store storefront country for tax and compliance purposes.</li>
+    </ul>
 
-We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. For significant changes, we will notify you within the app. Your continued use of CLVRCOST after any changes constitutes your acceptance of the updated policy.
+    <h2>2. How We Use Your Information</h2>
+    <p>We use the information we collect solely to operate and improve CLVRCOST:</p>
+    <ul>
+      <li>To authenticate your identity and maintain your account</li>
+      <li>To sync your data across your devices via our cloud backend</li>
+      <li>To verify your subscription status and grant access to paid features</li>
+      <li>To ensure the security and integrity of your data</li>
+      <li>To diagnose technical issues and improve app performance</li>
+      <li>To communicate with you about your account if necessary</li>
+    </ul>
+    <p>We do not use your data for advertising, we do not sell your data, and we do not share your data with third parties for marketing purposes.</p>
 
-## 10. Contact Us
+    <h2>3. Subscriptions and Payments</h2>
+    <p>CLVRCOST offers an auto-renewing subscription that unlocks all features of the app. Subscriptions are managed entirely by Apple through the App Store and Apple's In-App Purchase system.</p>
+    <ul>
+      <li><strong>Payment processing:</strong> All payments are processed by Apple. CLVRCOST does not see, collect, or store any payment card information.</li>
+      <li><strong>Subscription status:</strong> We receive a secure receipt from Apple's StoreKit framework that tells us whether your subscription is active, in a free trial, or expired. We use this to unlock or restrict access to the app's features.</li>
+      <li><strong>Free trial:</strong> A 14-day free trial is offered to eligible new subscribers. Eligibility is determined by Apple, not by us. You will not be charged during the free trial period.</li>
+      <li><strong>Cancellation and refunds:</strong> You can cancel your subscription at any time from your Apple ID settings under <em>Settings → [Your Name] → Subscriptions</em> on your device. Refund requests are handled by Apple in accordance with Apple's refund policies.</li>
+      <li><strong>Annual commitment plan:</strong> If you choose the annual-paid-monthly plan, you commit to twelve monthly payments. Cancellation stops automatic renewal at the end of the commitment period but does not refund payments already made. This is enforced by Apple, not by CLVRCOST.</li>
+    </ul>
+    <p>Apple's privacy practices governing in-app purchases are described at <a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a>.</p>
 
-If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:
+    <h2>4. Third-Party Services</h2>
+    <p>CLVRCOST uses the following third-party services to deliver its functionality:</p>
+    <ul>
+      <li><strong>Supabase</strong> — our cloud database and authentication provider. Your account data and business data are stored on Supabase servers. Supabase acts as a data processor on our behalf. Learn more at <a href="https://supabase.com/privacy">supabase.com/privacy</a>.</li>
+      <li><strong>Apple Sign In</strong> — used to authenticate users via their Apple ID. Governed by Apple's Privacy Policy at <a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a>.</li>
+      <li><strong>Google Sign In</strong> — used to authenticate users via their Google account. Governed by Google's Privacy Policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+      <li><strong>Apple In-App Purchase</strong> — used to process subscription payments and verify entitlements. Governed by Apple's Privacy Policy linked above.</li>
+    </ul>
+    <p>We do not integrate any advertising networks, analytics platforms, or data brokers.</p>
 
-**Mahmoud Hobloss**
-Developer, CLVRCOST
-Email: [info@clvrsolutions.uk](mailto:info@clvrsolutions.uk)
+    <h2>5. Data Storage and Security</h2>
+    <p>Your data is stored locally on your device using Apple's SwiftData framework, and optionally synced to Supabase cloud servers when you are connected to the internet. We use industry-standard security practices including encrypted connections (TLS) and row-level security policies on our database to protect your data from unauthorized access.</p>
 
----
+    <h2>6. Data Retention</h2>
+    <p>We retain your account and business data for as long as your account is active. If your subscription expires, your data is preserved so that you can resume access by re-subscribing. If you delete your account, your data is permanently removed from our systems within 30 days. Diagnostic and crash data is retained for up to 90 days. Subscription transaction records are retained as required by Apple and applicable tax law.</p>
 
-© 2026 Mahmoud Hobloss. All rights reserved.
+    <h2>7. Your Rights</h2>
+    <p>You have the following rights with respect to your personal data:</p>
+    <ul>
+      <li><strong>Access:</strong> You can view all data you have entered in the app at any time.</li>
+      <li><strong>Correction:</strong> You can edit or update your information within the app.</li>
+      <li><strong>Deletion:</strong> You can permanently delete your account and all associated data directly from within the app under Settings → Delete Account. This removes your data from both your device and our cloud servers.</li>
+      <li><strong>Export:</strong> You may request a copy of your data by contacting us at the email below.</li>
+    </ul>
+    <p>If you are located in the European Economic Area (EEA) or United Arab Emirates, you may have additional rights under applicable data protection laws including GDPR or UAE Federal Decree-Law No. 45 of 2021 on Personal Data Protection.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>CLVRCOST is a professional business tool intended for adults. We do not knowingly collect personal information from anyone under the age of 18. If you believe a minor has provided us with personal data, please contact us and we will delete it promptly.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. For significant changes, we will notify you within the app. Your continued use of CLVRCOST after any changes constitutes your acceptance of the updated policy.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+    <div class="contact">
+      <div class="contact-name">Mahmoud Hobloss</div>
+      <div class="contact-role">Developer, CLVRCOST</div>
+      <div class="contact-email">Email: <a href="mailto:info@clvrsolutions.uk">info@clvrsolutions.uk</a></div>
+    </div>
+
+    <footer>
+      © 2026 Mahmoud Hobloss. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
